@@ -85,7 +85,7 @@ body.content-scroll .site-menu-inner {
 
 @media (max-width: 767px) {
   body.content-scroll .site-menu-inner {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -159,6 +159,8 @@ body.content-scroll .site-menu-inner {
 
 .cover .lead {
   font-weight: 400;
+  max-width: 500px;
+  margin: 0 auto 20px;
 }
 
 h1 i {
