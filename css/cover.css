@@ -1,0 +1,222 @@
+
+.site-wrapper a,
+.site-wrapper a:focus,
+.site-wrapper a:hover {
+  color: #fff;
+}
+
+.site-wrapper .btn-default,
+.site-wrapper .btn-default:hover,
+.site-wrapper .btn-default:focus {
+  color: #333;
+  text-shadow: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: #fff;
+  text-align: center;
+  background: #1591b5 url('../images/hero.png') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-content {
+  background: #FFF;
+  color: #333;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.site-content #features,
+.site-content #beta {
+  padding-top: 20px;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+
+body.content-scroll .masthead {
+  z-index: 100;
+}
+
+.site-menu-inner {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+  display: none;
+}
+
+body.content-scroll .site-menu-inner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #1591b5;
+}
+
+@media (max-width: 767px) {
+  body.content-scroll .site-menu-inner {
+    display: none;
+  }
+}
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: url('../images/logo.png') top left no-repeat;
+  background-size: contain;
+  width: 130px;
+  text-indent: -9999px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .masthead-brand {
+    margin: 0 auto;
+  }
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.cover .cover-heading {
+  font-weight: 800;
+}
+
+.cover .lead {
+  font-weight: 400;
+}
+
+h1 i {
+  font-size: 250%;
+  color: #1591b5;
+}
+
+h2 i {
+  font-size: 150%;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+.form-horizontal {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container,
+  .container {
+    width: 700px;
+  }
+}
