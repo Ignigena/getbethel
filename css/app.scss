@@ -1,0 +1,96 @@
+---
+---
+
+@import "settings";
+@import "foundation";
+@import "base";
+@import "marketing";
+@import "podcast";
+
+.promo.brand {
+  background-color: #106982;
+  background-image: -webkit-radial-gradient(0% bottom,rgba(21,145,181,0.7) 0,rgba(21,145,181,0) 60%),-webkit-radial-gradient(50% top,rgba(21,145,181,0.6) 0,rgba(21,145,181,0) 75%);
+  background-image: radial-gradient(0% bottom,rgba(21,145,181,0.7) 0,rgba(21,145,181,0) 60%),radial-gradient(50% top,rgba(21,145,181,0.6) 0,rgba(21,145,181,0) 75%);
+  background-size: auto,auto,100% 1000px,100% 1000px;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: $column-gutter;
+  padding: 60px 0;
+  h3 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: rem-calc(40);
+  }
+  p {
+    margin: 0 auto;
+    margin-bottom: $column-gutter;
+    width: 80%;
+  }
+  .button {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 2px;
+    font-family: 'Lato';
+    &:hover {
+      border-color: rgba(255,255,255,0.5);
+    }
+  }
+}
+
+.gutter {
+  &.top {
+    margin-top: $column-gutter;
+  }
+  &.bottom {
+    margin-bottom: $column-gutter;
+  }
+}
+
+.copyright {
+  p {
+    font-size: rem-calc(12);
+    i.fa-heart {
+      color: #F27490;
+    }
+  }
+  padding-bottom: $column-gutter;
+}
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
