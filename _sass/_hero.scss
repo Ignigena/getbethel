@@ -1,0 +1,13 @@
+.hero {
+
+  &.beta {
+    background: url('../images/hero/beta.jpg');
+  }
+  &.main {
+    background: url('../images/hero/main.jpg');
+  }
+  &.podcast {
+    background: url('../images/hero/podcast.jpg');
+  }
+
+}

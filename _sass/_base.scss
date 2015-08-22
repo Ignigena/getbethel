@@ -6,6 +6,10 @@
   text-indent: -9999px
 }
 
+.top-bar-section > ul > li > a {
+  font-size: 0.9rem;
+}
+
 .hero {
   height: 500px;
   background-size: cover !important;
@@ -53,6 +57,12 @@
       color: white;
     }
   }
+}
+
+.alternate {
+  background-color: #F6F6F6;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
 }
 
 .section {
