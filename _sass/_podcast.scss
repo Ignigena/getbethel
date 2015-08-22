@@ -1,5 +1,5 @@
 .hero.podcast {
-  background: url('../images/hero/podcast.png');
+  background: url('../images/hero/podcast.jpg');
 }
 
 .pricing {
@@ -13,7 +13,7 @@
   }
   .button {
     margin-bottom: rem-calc(10);
-    font-family: 'Lato';
+    font-family: $header-font-family;
     text-transform: uppercase;
     font-weight: bold;
   }

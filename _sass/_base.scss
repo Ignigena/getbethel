@@ -24,7 +24,7 @@
     color: #FFF;
   }
   .button {
-    font-family: 'Lato';
+    font-family: $header-font-family;
     margin-top: 20px;
     text-transform: uppercase;
     width: 200px;
@@ -35,6 +35,15 @@
     right: 10px;
     bottom: 10px;
     color: rgba(255,255,255,0.7);
+  }
+  .photo-credit {
+    color: #CCC;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    a {
+      color: white;
+    }
   }
 }
 
