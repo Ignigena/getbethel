@@ -10,55 +10,6 @@
   font-size: 0.9rem;
 }
 
-.hero {
-  height: 500px;
-  background-size: cover !important;
-  text-align: center;
-  position: relative;
-  &.medium {
-    height: 350px;
-    .row {
-      padding-top: 150px;
-    }
-  }
-  .row {
-    padding-top: 200px;
-  }
-  h1 {
-    font-weight: bold;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: rem-calc(60);
-    line-height: rem-calc(50);
-  }
-  h2 {
-    font-size: rem-calc(25);
-    color: #FFF;
-  }
-  .button {
-    font-family: $header-font-family;
-    margin-top: 20px;
-    text-transform: uppercase;
-    width: 200px;
-    font-weight: bold;
-  }
-  a i {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    color: rgba(255,255,255,0.7);
-  }
-  .photo-credit {
-    color: #CCC;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    a {
-      color: white;
-    }
-  }
-}
-
 .alternate {
   background-color: #F6F6F6;
   border-top: 1px solid #DDD;
