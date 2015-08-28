@@ -51,3 +51,14 @@
     margin-left: 5px;
   }
 }
+
+.feature.embedded {
+  border-bottom: 1px solid #DDD;
+  p {
+    margin-left: 0;
+    width: auto;
+  }
+  iframe {
+    border: 1px solid #DDD;
+  }
+}
