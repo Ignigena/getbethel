@@ -7,10 +7,16 @@
     height: 350px;
     .row {
       padding-top: 150px;
+      @media #{$small-only} {
+        padding-top: 125px;
+      }
     }
   }
   .row {
     padding-top: 200px;
+    @media #{$small-only} {
+      padding-top: 100px;
+    }
   }
   h1 {
     font-weight: bold;
@@ -18,10 +24,16 @@
     text-transform: uppercase;
     font-size: rem-calc(60);
     line-height: rem-calc(50);
+    @media #{$small-only} {
+      font-size: 3rem;
+    }
   }
   h2 {
     font-size: rem-calc(25);
     color: #FFF;
+    @media #{$small-only} {
+      font-size: 1.5rem;
+    }
   }
   .button {
     font-family: $header-font-family;
@@ -50,19 +62,19 @@
 .hero {
 
   &.beta {
-    background: url('../images/hero/beta.jpg');
+    background: url('../images/hero/beta.jpg') center;
   }
   &.contact {
-    background: url('../images/hero/austin.jpg') center center;
+    background: url('../images/hero/austin.jpg') center;
   }
   &.main {
-    background: url('../images/hero/main.jpg');
+    background: url('../images/hero/main.jpg') center;
   }
   &.podcast {
-    background: url('../images/hero/podcast.jpg');
+    background: url('../images/hero/podcast.jpg') center;
   }
   &.about {
-    background: url('../images/hero/sanctuary.jpg');
+    background: url('../images/hero/sanctuary.jpg') center;
   }
 
 }

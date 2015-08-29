@@ -52,6 +52,9 @@
 .copyright {
   p {
     font-size: rem-calc(12);
+    @media #{$small-only} {
+      text-align: center;
+    }
     i.fa-heart {
       color: #F27490;
     }

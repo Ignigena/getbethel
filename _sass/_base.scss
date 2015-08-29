@@ -19,12 +19,26 @@
 .section {
   padding-top: $column-gutter;
   padding-bottom: ($column-gutter * 2);
+  @media #{$small-only} {
+    padding-bottom: 1rem;
+  }
   h2:first-child,
   h3:first-child {
     margin-top: ($column-gutter * 2);
     margin-bottom: 20px;
+    @media #{$small-only} {
+      margin-top: 1rem;
+    }
   }
   p {
     font-size: rem-calc(14);
+  }
+}
+
+@media #{$small-only} {
+  h2 .button.pull-right {
+    float: none;
+    margin-top: 20px;
+    width: 100%;
   }
 }

@@ -5,3 +5,10 @@
     color: $primary-color;
   }
 }
+.solutions {
+  i.fa {
+    @media #{$small-only} {
+      font-size: 58px
+    }
+  }
+}

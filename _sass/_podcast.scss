@@ -3,6 +3,7 @@
 }
 
 .callout {
+  margin-bottom: $column-gutter;
   h3 {
     margin-top: $column-gutter;
     margin-bottom: rem-calc(10);
@@ -39,6 +40,11 @@
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 38%;
+  @media #{$small-only} {
+    background-position: top left;
+    background-size: 80%;
+    padding-top: 70%;
+  }
 }
 
 .feature.vimeo {
@@ -49,6 +55,11 @@
   i.fa-microphone {
     font-size: rem-calc(25);
     margin-left: 5px;
+  }
+  @media #{$small-only} {
+    background-position: top;
+    background-size: 80%;
+    padding-top: 50%;
   }
 }
 
