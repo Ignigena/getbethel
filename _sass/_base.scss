@@ -6,8 +6,15 @@
   text-indent: -9999px
 }
 
-.top-bar-section > ul > li > a {
-  font-size: 0.9rem;
+.top-bar-section {
+  @media #{$small-only} {
+    a {
+      color: #FFF !important;
+    }
+  }
+  & > ul > li > a {
+    font-size: 0.9rem;
+  }
 }
 
 .alternate {
