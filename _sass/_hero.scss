@@ -1,0 +1,80 @@
+.hero {
+  height: 500px;
+  background-size: cover !important;
+  text-align: center;
+  position: relative;
+  &.medium {
+    height: 350px;
+    .row {
+      padding-top: 150px;
+      @media #{$small-only} {
+        padding-top: 125px;
+      }
+    }
+  }
+  .row {
+    padding-top: 200px;
+    @media #{$small-only} {
+      padding-top: 100px;
+    }
+  }
+  h1 {
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: rem-calc(60);
+    line-height: rem-calc(50);
+    @media #{$small-only} {
+      font-size: 3rem;
+    }
+  }
+  h2 {
+    font-size: rem-calc(25);
+    color: #FFF;
+    @media #{$small-only} {
+      font-size: 1.5rem;
+    }
+  }
+  .button {
+    font-family: $header-font-family;
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 200px;
+    font-weight: bold;
+  }
+  a i {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: rgba(255,255,255,0.7);
+  }
+  .photo-credit {
+    color: #CCC;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    a {
+      color: white;
+    }
+  }
+}
+
+.hero {
+
+  &.beta {
+    background: url('../images/hero/beta.jpg') center;
+  }
+  &.contact {
+    background: url('../images/hero/austin.jpg') center;
+  }
+  &.main {
+    background: url('../images/hero/main.jpg') center;
+  }
+  &.podcast {
+    background: url('../images/hero/podcast.jpg') center;
+  }
+  &.about {
+    background: url('../images/hero/sanctuary.jpg') center;
+  }
+
+}

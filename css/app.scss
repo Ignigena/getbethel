@@ -1,0 +1,63 @@
+---
+---
+
+@import
+  "settings",
+  "foundation",
+  "base",
+  "hero",
+  "marketing",
+  "podcast";
+
+.promo.brand {
+  background-color: #106982;
+  background-image: -webkit-radial-gradient(0% bottom,rgba(21,145,181,0.7) 0,rgba(21,145,181,0) 60%),-webkit-radial-gradient(50% top,rgba(21,145,181,0.6) 0,rgba(21,145,181,0) 75%);
+  background-image: radial-gradient(0% bottom,rgba(21,145,181,0.7) 0,rgba(21,145,181,0) 60%),radial-gradient(50% top,rgba(21,145,181,0.6) 0,rgba(21,145,181,0) 75%);
+  background-size: auto,auto,100% 1000px,100% 1000px;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: $column-gutter;
+  padding: 60px 0;
+  h3 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: rem-calc(40);
+  }
+  p {
+    margin: 0 auto;
+    margin-bottom: $column-gutter;
+    width: 80%;
+  }
+  .button {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 2px;
+    font-family: $header-font-family;
+    &:hover {
+      border-color: rgba(255,255,255,0.5);
+    }
+  }
+}
+
+.gutter {
+  &.top {
+    margin-top: $column-gutter;
+  }
+  &.bottom {
+    margin-bottom: $column-gutter;
+  }
+}
+
+.copyright {
+  p {
+    font-size: rem-calc(12);
+    @media #{$small-only} {
+      text-align: center;
+    }
+    i.fa-heart {
+      color: #F27490;
+    }
+  }
+  padding-bottom: $column-gutter;
+}

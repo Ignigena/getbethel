@@ -1,0 +1,14 @@
+.platform-features {
+  padding-bottom: 1.875rem;
+  i.fa {
+    font-size: 76px;
+    color: $primary-color;
+  }
+}
+.solutions {
+  i.fa {
+    @media #{$small-only} {
+      font-size: 58px
+    }
+  }
+}

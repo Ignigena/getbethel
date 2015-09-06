@@ -1,0 +1,51 @@
+.top-bar .name h1 {
+  background: url('/images/logo-color.png') 0 12px no-repeat;
+  background-size: contain;
+  width: 180px;
+  margin-left: 15px;
+  text-indent: -9999px
+}
+
+.top-bar-section {
+  @media #{$small-only} {
+    a {
+      color: #FFF !important;
+    }
+  }
+  & > ul > li > a {
+    font-size: 0.9rem;
+  }
+}
+
+.alternate {
+  background-color: #F6F6F6;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+
+.section {
+  padding-top: $column-gutter;
+  padding-bottom: ($column-gutter * 2);
+  @media #{$small-only} {
+    padding-bottom: 1rem;
+  }
+  h2:first-child,
+  h3:first-child {
+    margin-top: ($column-gutter * 2);
+    margin-bottom: 20px;
+    @media #{$small-only} {
+      margin-top: 1rem;
+    }
+  }
+  p {
+    font-size: rem-calc(14);
+  }
+}
+
+@media #{$small-only} {
+  h2 .button.pull-right {
+    float: none;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
